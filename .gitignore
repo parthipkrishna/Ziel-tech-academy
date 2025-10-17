@@ -1,0 +1,87 @@
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore Composer dependencies
+/vendor/
+
+# Ignore environment and sensitive configuration files
+# Ignore all environment files
+.env
+!.env.example  # Keep this as a reference file
+!.env.sample   # Keep this if you want to share a sample config
+
+# Ignore IDE/editor-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore compiled & cache files
+bootstrap/cache/
+storage/logs/
+storage/framework/*
+!storage/framework/.gitignore
+storage/app/public/*
+!storage/app/public/.gitignore
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+*.bak
+*.swp
+*.swo
+
+# Ignore Laravel log files
+*.log
+
+# Ignore Laravel session files
+storage/framework/sessions/*
+!storage/framework/sessions/.gitignore
+
+# Ignore compiled classes
+.phpunit.result.cache
+.phpstorm.meta.php
+.php-cs-fixer.cache
+
+# Ignore Laravel debugbar files
+storage/debugbar/
+
+# Ignore Laravel Nova
+nova/
+
+# Ignore tests coverage reports
+coverage/
+
+# Ignore deployment-related files
+homestead.json
+homestead.yaml
+vagrantfile
+
+# Ignore Laravel Mix files
+public/hot
+public/storage
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+mix-manifest.json
+npm-shrinkwrap.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore Composer lock file (optional, depends on your workflow)
+composer.lock
+
+# Ignore docker-related files
+docker-compose.override.yml
+.docker/
+
+# Ignore Laravel storage directory (except necessary placeholders)
+storage/app/*
+!storage/app/.gitignore
+storage/framework/cache/*
+!storage/framework/cache/.gitignore
+storage/framework/views/*
+!storage/framework/views/.gitignore
+storage/logs/*
+!storage/logs/.gitignore
