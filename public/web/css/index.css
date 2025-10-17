@@ -1,0 +1,87 @@
+        /* .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .step-box-wrapper {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px; 
+            position: relative;
+        }
+
+        .step-box {
+            width: 250px;
+            height: 300px;
+            background-color: #AFDFFF;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: visible;
+        }
+
+        .step-box.arrow::after {
+            content: "";
+            position: absolute;
+            top: 45%;
+            right: -30px; 
+            transform: translateY(-50%);
+            border-top: 40px solid transparent;
+            border-bottom: 40px solid transparent;
+            border-left: 30px solid #AFDFFF; 
+            z-index: 1;
+        }
+
+        .circle {
+            background: white;
+            color: #000;
+            font-weight: 800;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 30px auto 10px;
+            line-height: 77px;
+            font-size: 36px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        }
+
+        .step-box h6 {
+            font-size: 30px;
+            color: #000;
+            margin: 10px 0px;
+        }
+
+        .desc {
+            background-color: #E6F3FF;
+            padding: 10px 10px;
+            color: #0D4F8B;
+            line-height: 1.8;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        @media (max-width: 768px) {
+            .step-box-wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .step-box {
+                width: 90%;
+                max-width: 400px;
+            }
+
+            .step-box.arrow::after {
+                display: none;
+            }
+        } */
