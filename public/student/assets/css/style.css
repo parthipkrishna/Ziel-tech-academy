@@ -1,0 +1,997 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Metrophobic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.datas .logo {
+    height: 80px;
+    width: auto;
+}
+
+.slider-text {
+    display: none;
+}
+
+.slider-text.active {
+    display: block;
+}
+
+.slider-text h3 {
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.slider-text p {
+    color: var(--Color-text, #474747);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.slider-text .btn-enroll {
+    background: var(--Congress-Blue-800, #0B4E89);
+    color: var(--Congress-Blue-100, #E1EFFD);
+    border-radius: 30px;
+    border: 0px;
+    font-size: 16px;
+    padding: 15px 30px;
+}
+
+.slider-text .know-btn {
+    background: var(--Congress-Blue-200, #BCDEFB);
+    color: var(--Black-Pearl-950, #001021);
+    border-radius: 30px;
+    border: 0px;
+    font-size: 16px;
+    padding: 15px 30px;
+}
+
+.slider-parent-div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slider-parent-div .carousel-control-prev, .slider-parent-div .carousel-control-next {
+    display: none;
+}
+
+.slider-parent-div .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    left: 0;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+}
+
+.slider-parent-div .carousel-indicators [data-bs-target] {
+    background-color: #80C4F9 !important;
+    border-radius: 4px !important;
+    width: 6px !important;
+    height: 6px !important;
+    list-style: none !important;
+}
+
+.slider-parent-div .carousel-indicators .active {
+    background-color: #0B4E89 !important;
+    border-radius: 4px !important;
+    width: 40px !important;
+    height: 6px !important;
+}
+
+/* subject section css */
+
+.subject-section h3 {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.subject-section .card {
+    background: var(--Congress-Blue-100, #E1EFFD) !important;
+    border-radius: 20px !important;
+    box-shadow: none !important;
+}
+
+.subject-section .card .card-body {
+    padding: 15px 20px !important;
+}
+
+.subject-section .card .card-body h6, .subject-section .card .card-body p {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.barline {
+    background-color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 5px;
+}
+
+.line-under {
+    width: 5%;
+    background-color: aqua;
+    height: 5px;
+}
+
+.icon-bg {
+    width: 50px;
+    height: 50px;
+    background: var(--Congress-Blue-200, #BCDEFB);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-bg i {
+    font-size: 28px;
+}
+
+.live-section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.live-section h6 {
+    color: var(--Black-Pearl-950, #001021);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.live-section h6 span {
+    color: #F84545;
+}
+
+.live-section h3 {
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.live-section p {
+    color: var(--Color-text, #474747);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+}
+.live-classes-list h5{
+    color: #001021;
+}
+.live-classes-list   .custom-small-btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 1.5rem;
+    }
+
+.avatar-group {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8a5cf6;
+    /* Example background */
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.avatar:not(:first-child) {
+    margin-left: -10px;
+    /* Overlapping effect */
+}
+
+.more-count {
+    background-color: #123456;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 20px;
+    height: 35px;
+}
+
+.live-section button {
+    background: var(--Congress-Blue-800, #0B4E89);
+    padding: 10px 30px;
+    border: 0px;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.history-section h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* history section css */
+
+.history-section .card {
+    width: 100%;
+    height: 190px;
+    background: linear-gradient(to right, #eaf2f8, #dce8f4);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.history-section .corner {
+    position: absolute;
+    top: 0;
+    left: -11px;
+    width: 160px;
+    height: 20px;
+    background: #ffcc00;
+    transform: skewX(-50deg);
+}
+
+.history-section .corner-bottom {
+    position: absolute;
+    bottom: 0;
+    right: -11px;
+    width: 160px;
+    height: 20px;
+    background: #ffcc00;
+    transform: skewX(-50deg);
+    z-index: 1000;
+}
+
+.history-section .title {
+    font-size: 14px;
+    color: #0A2847;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-weight: 300;
+}
+
+.locked-card {
+    opacity: 0.6; /* Dim the card */
+    pointer-events: none; /* Make the card non-clickable */
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent overlay */
+    border-radius: 0.375rem; /* Match card border-radius */
+}
+
+.card-overlay .bi-lock-fill {
+    font-size: 3rem; /* Adjust icon size as needed */
+    color: #fff; /* Lock icon color */
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.5)); /* Add a subtle shadow for visibility */
+}
+
+.person-image {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    height: 140px;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px 20px;
+    border-radius: 10px;
+    background: #F0F7FF;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.10);
+    width: 35%;
+    display: none;
+    z-index: 2000;
+}
+
+.timeCalender {
+    border-radius: 10px;
+    border: 0.50px var(--Congress-Blue-300, #80C4F9) solid;
+    width: fit-content;
+    padding: 10px 20px;
+    color: var(--Color-text-black, #242424);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.popup button {
+    background-color: transparent;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 2000;
+}
+
+.popup .carousel-indicators {
+    display: none !important;
+}
+
+.popup .carousel-item button {
+    width: 100%;
+    background-color: #0B4E89;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 360px;
+    border-radius: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 30px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.3;
+}
+
+
+
+/* course-details page css */
+
+.course-details .card {
+    background: var(--Congress-Blue-50, #ffffff);
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+}
+
+.course-details .card .card-body h4 {
+    color: var(--Black-Pearl-950, #001021);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.course-details .card .card-body .course-details-card {
+    border-radius: 16px;
+    border: 1px var(--Stroke-two, #A7A7A7) solid;
+    background-color: transparent;
+    padding: 15px 10px 15px 40px;
+    width: 48%;
+}
+
+.course-details .card .card-body .course-details-card h6 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.syllabus-datails .card {
+    background:  #fffffff;
+    padding: 10px 10px !important;
+}
+
+.syllabus-datails .card .card-body h3 {
+    color: black !important;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.syllabus-details .card .card-body p {
+    color: #474747;
+    font-size: 16px;
+}
+
+/* subject-datas css */
+
+.subject-datas .card {
+    background: #ffffff;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+
+.subject-datas .card .card-body h3 {
+    color: black;
+    font-size: 18px;
+}
+
+.subject-datas .card .card-body button {
+    width: 100%;
+    padding: 20px 20px;
+    border: 0px;
+    border-radius: 10px;
+    background: var(--Congress-Blue-100, #E1EFFD);
+    text-align: left;
+    border: 1px var(--Black-Pearl-800, #E1EFFD) solid !important;
+}
+
+.subject-datas .card .card-body button.active {
+    background: var(--Congress-Blue-200, #BCDEFB) !important;
+    border: 1px var(--Black-Pearl-800, #004D95) solid !important;
+}
+
+.subject-datas .subject-img a img {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subject-datas .subject-img h6 {
+    font-size: 18px;
+    font-weight: 500;
+    width: 80% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subject-datas .subject-img h5 {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #001021;
+    margin-top: 15px;
+}
+
+.subject-datas .subject-img p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    width: 80% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subject-desc {
+    color: #001021;
+    }
+
+.subject-img {
+    display: none;
+}
+
+.electronics-classes {
+    display: none;
+}
+
+.active-subject {
+    display: flex !important;
+}
+
+.electronics-classes {
+    margin-top: 30px;
+    height: 60vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #80C4F9 transparent;
+    -ms-overflow-style: none;
+    position: relative;
+    display: none;
+}
+
+.electronics-classes h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(48, 44, 44);
+    margin-top: 0px;
+}
+.electronics-classes h5 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #001021;
+    margin-top: 6px;
+    font-style: normal;
+}
+
+.electronics-classes .card {
+    padding: 0px;
+    margin: 0px;
+    border-radius: 25px;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.electronics-classes .card .card-body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.electronics-classes .card .card-body h6 {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(48, 44, 44);
+}
+
+.electronics-classes .card .card-body h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(48, 44, 44);
+}
+
+.electronics-classes .card .card-body p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* graph-card-section page */
+
+.profile-dropdown {
+    min-width: 300px !important;
+}
+
+.graph-card-section .cards {
+    background: #fff;
+    border-radius: 20px;
+    border: 1px #DDDDDD solid;
+    padding: 20px 20px 10px 20px;
+    height: 100%;
+}
+
+.graph-card-section .cards h3 {
+    color: var(--Black-Pearl-950, #001021);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.graph-card-section .cards button {
+    background: rgba(169, 237, 172, 0.20);
+    border-radius: 20px;
+    border: 1.50px #5ACC58 solid;
+    color: #3AD842;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.graph-card-section .cards .live-classes {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.graph-card-section .cards .live-classes button {
+    padding: 10px 20px;
+    background: var(--Black-Pearl-100, #DCEFFF);
+    border-radius: 20px;
+    color: var(--Color-text, #474747);
+    font-size: 14px;
+    font-weight: 400;
+    border: 0px;
+    width: fit-content;
+}
+
+.attendance-card-section .card {
+    background: #ffffff !important;
+    border-radius: 20px;
+    border: 1px solid #DDDDDD;
+    padding: 20px 20px 10px 20px;
+    box-shadow: none !important;
+    height: 100%;
+}
+
+.attendance-card-section .card .attendance-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.attendance-card-section .card .attendance-header h5 {
+    color: var(--Black-Pearl-950, #001021);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.attendance-card-section .card .attendance-header .attendance-header-percentage {
+    background-color: #F0F7FF !important;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: var(--Black-Pearl-800, #004D95) !important; 
+    font-size: 24px !important; 
+    font-weight: 500 !important;
+}
+
+.attendance-card-section .card .attendance-bar {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.attendance-card-section .card .attendance-bar div {
+    height: 5px;
+    flex: 1;
+    border-radius: 3px;
+}
+
+.attendance-card-section .card .present {
+    background-color: #62AA61;
+}
+
+.attendance-card-section .card .absent {
+    background-color: #FF7474;
+}
+
+.attendance-card-section .card .unmarked {
+    background-color: rgba(70.96, 70.96, 70.96, 0.50);
+}
+
+.attendance-card-section .card .badge {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.attendance-card-section .card .status-message {
+    width: 100%;
+    text-align: center;
+    background: var(--Congress-Blue-50, #F0F7FF);
+    border-radius: 8px;
+    padding: 12px 20px;
+    color: var(--Color-text, #474747); 
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.present-badge {
+    background-color: #62AA61 !important; /* Green */
+    color: white !important;
+}
+.absent-badge {
+    background-color: #FF7474 !important; /* Red */
+    color: white !important;
+}
+.unmarked-badge {
+    background-color: rgba(70.96, 70.96, 70.96, 0.50) !important; /* Gray */
+    color: white !important;
+}
+
+.graph-section {
+    background-color: var(--Congress-Blue-50, #ffffff) !important;
+    border-radius: 20px !important;
+    padding: 20px !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.graph-section .card h4 {
+    color: var(--Black-Pearl-950, #001021) !important; 
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    text-transform: lowercase !important;
+}
+
+.dropdown-button {
+    display: flex;
+    justify-content: end;
+}
+
+.dropdown-button button {
+    background: var(--Border-color, #E5E5E5); 
+    border-radius: 27px; 
+    border: 1px var(--Color-stroke, #C8C8C8) solid;
+    padding: 8px 25px !important;
+}
+
+.dropdown-button button:hover {
+    border: 1px var(--Color-stroke, #C8C8C8) solid;
+    background: var(--Border-color, #E5E5E5); 
+}
+.video-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.video-thumbnail {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px; /* Play button size */
+    color: white;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+.video-wrapper:hover .play-icon {
+    opacity: 1;
+}
+.swal2-title-sm {
+    font-size: 20px !important; 
+    font-weight: 500;
+    color: #001021;            
+}
+
+.custom-swal-popup {
+    border-radius: 15px !important; 
+    overflow: hidden; 
+}
+
+.swal-card {
+    border-radius: 15px;
+}
+.swal-card h5 {
+    color: #001021;
+}
+.video-thumbnail {
+    box-shadow: none !important;  
+    border: none !important;       
+    display: block;
+    width: 100%;
+    object-fit: cover; 
+}
+
+@media screen and (max-width:990px) {
+
+    .slider-text .btn-enroll {
+        margin-bottom: 20px;
+    }
+
+    .slider-text .know-btn {
+        margin-bottom: 20px;
+    }
+
+    .live-section button {
+        margin-bottom: 20px;
+    }
+
+    .popup {
+        width: 70%;
+    }
+
+    /* course page css */
+
+    .syllabus-datails {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .slider-text h3 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .slider-text p {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .slider-text .btn-enroll {
+        border-radius: 10px;
+        font-size: 12px;
+        padding: 8px 20px;
+        margin-bottom: 20px;
+    }
+
+    .slider-text .know-btn {
+        border-radius: 10px;
+        font-size: 12px;
+        padding: 8px 20px;
+        margin-bottom: 20px;
+    }
+
+    /* subject section css */
+
+    .subject-section h3 {
+        font-size: 18px;
+    }
+
+    .subject-section .card {
+        border-radius: 10px !important;
+    }
+
+    .subject-section .card .card-body {
+        padding: 10px 20px !important;
+    }
+
+    .subject-section .card .card-body h6, .subject-section .card .card-body p {
+        font-size: 14px;
+    }
+
+    .live-section h6 {
+        font-size: 16px;
+    }
+
+    .live-section h3 {
+        font-size: 20px;
+    }
+
+    .live-section p {
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .live-section button {
+        padding: 8px 20px;
+        border-radius: 10px;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .history-section h4 {
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    /* history section css */
+
+    .history-section .card {
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .history-section .corner {
+        width: 140px;
+    }
+
+    .history-section .corner-bottom {
+        width: 140px;
+    }
+
+    .history-section .title {
+        font-size: 14px;
+    }
+
+    .person-image {
+        height: 170px;
+    }
+
+    .popup {
+        padding: 10px 30px;
+        border-radius: 10px;
+        width: 99%;
+    }
+
+    .timeCalender {
+        border-radius: 10px;
+        font-size: 14px;
+    }
+
+    .carousel-control-next {
+        right: -40px !important;
+    }
+
+    .carousel-control-prev {
+        left: -40px !important;
+    }
+
+    /* course-details page css */
+
+    .course-details .card {
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .course-details .card .card-body h4 {
+        font-size: 14px;
+    }
+
+    .course-details .card .card-body .course-details-card {
+        border-radius: 10px;
+        padding: 15px 10px 15px 25px;
+        width: 100%;
+    }
+
+    .course-details .card .card-body .course-details-card h6 {
+        color: black;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .syllabus-datails .card .card-body h3 {
+        font-size: 18px;
+    }
+
+    .syllabus-details .card .card-body p {
+        color: #474747;
+        font-size: 16px;
+    }
+
+    /* subject page css */
+
+    .subject-datas .subject-img a img {
+        width: 100% !important;
+    }
+
+    .subject-datas .subject-img h6 {
+        width: 100% !important;
+        line-height: 30px;
+    }
+
+    .subject-datas .subject-img p {
+        width: 100% !important;
+    }
+
+    /* graph-card-section page */
+
+    .graph-card-section .cards {
+        padding: 10px 10px 10px 10px;
+    }
+
+    .attendance-card-section .card {
+        padding: 10px;
+    }
+
+    .graph-section {
+        padding: 10px;
+    }
+}
